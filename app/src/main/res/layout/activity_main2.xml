@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/Fullname_TextView"
+        android:id="@+id/fullname_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.083" />
 
     <EditText
-        android:id="@+id/Fullname_Field"
+        android:id="@+id/fullname_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
-        android:id="@+id/Age_TextView"
+        android:id="@+id/age_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -60,11 +60,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fullname_TextView"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_textview"
         app:layout_constraintVertical_bias="0.060000002" />
 
     <EditText
-        android:id="@+id/Age_Field"
+        android:id="@+id/age_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.17000002" />
 
     <TextView
-        android:id="@+id/Gender_TextView"
+        android:id="@+id/gender_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -98,11 +98,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Age_TextView"
+        app:layout_constraintTop_toBottomOf="@+id/age_textview"
         app:layout_constraintVertical_bias="0.033" />
 
     <EditText
-        android:id="@+id/Gender_Field"
+        android:id="@+id/gender_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -116,13 +116,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toEndOf="@+id/Gender_TextView"
-        app:layout_constraintTop_toBottomOf="@+id/Age_Field"
+        app:layout_constraintStart_toEndOf="@+id/gender_textview"
+        app:layout_constraintTop_toBottomOf="@+id/age_field"
         app:layout_constraintVertical_bias="0.00999999" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="100"
+        android:id="@+id/search_button"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -135,12 +135,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Gender_Field"
+        app:layout_constraintTop_toBottomOf="@+id/gender_field"
         app:layout_constraintVertical_bias="0.26" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="100"
+        android:id="@+id/save_button"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -153,6 +153,61 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Gender_Field"
+        app:layout_constraintTop_toBottomOf="@+id/gender_field"
         app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/fullname_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/age_result"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_result"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/gender_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_result"
+        app:layout_constraintVertical_bias="0.110000014" />
+
 </android.support.constraint.ConstraintLayout>
